@@ -4,10 +4,10 @@ const bd = require('../models/base.db')
 
 
 /* GET home page. */
-router.get('/', async (req, res, next) => {
-  const users = await bd.whatsapp.findAll({
+router.get('/', (req, res, next) => {
+  const users = bd.whatsapp.findAll({
     });
-  const chats = await bd.whatsapp.findAll({
+  const chats = bd.whatsapp.findAll({
   include: bd.Chat
   });
   
