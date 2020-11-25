@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 const bd = require('../models/base.db')
-var async   = require('async');
 
 
 /* GET home page. */
