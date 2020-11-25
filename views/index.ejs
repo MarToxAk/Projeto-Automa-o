@@ -8,8 +8,10 @@
 
 <body>
   <% for( chat of chats ) { %>
-    <%= chat.name_wpp %> 
-   
+    
+    <%= for( mensagem of chat.chat ) { %>
+      <%= mensagem.mensagem %>  
+    <% } %>
   <% } %>
   </h1>
   <p>Welcome to <%= title %></p>
