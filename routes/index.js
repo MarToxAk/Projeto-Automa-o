@@ -11,7 +11,7 @@ router.get('/', async (req, res, next) => {
   const chats = await bd.whatsapp.findAll({
   include: bd.Chat
   });
-  const html = await ejs.renderFile('../models/index.ejs', { title: 'Express', users: users, chats: chats }, {async: true}, {async: true});
+  const html = await ejs.renderFile('./models/index.ejs', { title: 'Express', users: users, chats: chats }, {async: true}, {async: true});
   res.send(html);
 
 });
