@@ -6,7 +6,8 @@ const bd = require('../models/base.db')
 /* GET home page. */
 router.get('/', async (req, res, next) => {
   const users = await bd.whatsapp.findAll({
-    include: bd.Chat
+    include: bd.Chat,
+    order: '"updatedAt" DESC'
     });
   const chats = await bd.Chat.findAll({
 
