@@ -26,3 +26,11 @@
 [1124/044817.267:ERROR:exception_snapshot_win.cc(99)] thread ID 9452 not found in process
 [1124/051640.140:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
 [1124/051640.141:ERROR:exception_snapshot_win.cc(99)] thread ID 2684 not found in process
+[1125/180946.458:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1125/180946.459:ERROR:exception_snapshot_win.cc(99)] thread ID 8904 not found in process
+[1125/181027.335:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1125/181027.336:ERROR:exception_snapshot_win.cc(99)] thread ID 12824 not found in process
+[1125/181431.151:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1125/181431.156:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-vGAb2l\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1125/181431.156:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-vGAb2l\Crashpad\reports\13afcca1-821f-41bd-8cc6-2e1c112a2a5d.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1125/181431.156:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
