@@ -8,7 +8,10 @@
 
 <body>
   <% for( chat of users ) { %>
-      <%- chat.id %> 
+    <%- chat.name_wpp %> 
+    <% for( var i=0; i < users.lenght; i++) { %>
+      <%- chats[i].id %> 
+  <% } %>
   <% } %>
   </h1>
   <p>Welcome to <%= title %></p>
