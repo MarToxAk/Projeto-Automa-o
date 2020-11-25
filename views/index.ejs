@@ -8,8 +8,8 @@
 
 <body>
   <% for( chat of chats ) { %>
-    <% for( mensagem of chat.chat ) { %>
-      <%- mensagem %>  
+    <%- chat.chat.mensagem %>   
+  
     <% } %>
   <% } %>
   </h1>
