@@ -12,9 +12,8 @@ router.get('/', async (req, res, next) => {
   include: bd.Chat
   });
   const html = await ejs.renderFile();
-  async.parallel([
-    res.render('index', { title: 'Express', users: users, chats: chats })
-  ], req);
+  res.render('index', { title: 'Express', users: users, chats: chats });
+
 });
 
 module.exports = router;
