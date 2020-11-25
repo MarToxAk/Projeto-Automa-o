@@ -39,8 +39,8 @@ Whatsapp.hasOne(Chat, {
 Chat.belongsTo(Whatsapp);
 
 
-//Whatsapp.sync({force: true})
-//Chat.sync({force: true})
+Whatsapp.sync({force: true})
+Chat.sync({force: true})
 
 
 
