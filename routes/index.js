@@ -6,10 +6,10 @@ const bd = require('../models/base.db')
 /* GET home page. */
 router.get('/', async (req, res, next) => {
   const users = await bd.whatsapp.findAll({
-    include: bd.Chat,
-    order:[
-      bd.Chat ,['createdAt', 'DESC']
-    ]
+    include: [{
+      model: bd.Chat,
+      order: ['createdAt', 'DESC']
+    }]
     })
   const chats = await bd.Chat.findAll({
 
