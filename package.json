@@ -1,0 +1,42 @@
+{
+  "name": "projeto-auto",
+  "version": "0.0.1",
+  "description": "Um Projeto de Automação usando Venom-Bot e Dialogflow.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarToxAk/Projeto-Automa-o.git"
+  },
+  "author": "AutoPyWeb",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^3.3.0",
+    "body-parser": "^1.19.0",
+    "botbuilder": "^4.11.0",
+    "canvas": "^2.6.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dialogflow": "^4.0.3",
+    "ejs": "~2.6.1",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "restify": "^8.5.1",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0",
+    "tmp": "^0.2.1",
+    "uuid": "^8.3.1",
+    "venom-bot": "^2.0.25"
+  },
+  "bugs": {
+    "url": "https://github.com/MarToxAk/Projeto-Automa-o/issues"
+  },
+  "homepage": "https://github.com/MarToxAk/Projeto-Automa-o#readme"
+}

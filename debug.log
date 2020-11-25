@@ -1,0 +1,28 @@
+[1122/032422.785:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1122/032422.790:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-YL5UZ8\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1122/032422.790:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-YL5UZ8\Crashpad\reports\9d9672e1-c6ca-47a4-9cd3-7c6c0ba49aab.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1122/032422.790:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1122/035552.325:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1122/035552.326:ERROR:exception_snapshot_win.cc(99)] thread ID 10020 not found in process
+[1122/035552.326:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1122/040823.158:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1122/040823.163:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-kCvl0a\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1122/040823.163:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-kCvl0a\Crashpad\reports\79131735-744e-4878-89f5-d0247abc813a.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1122/040823.163:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1122/041159.502:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1122/041159.502:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1122/041159.502:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1122/041159.502:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1122/044004.985:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1122/044004.986:ERROR:exception_snapshot_win.cc(99)] thread ID 1504 not found in process
+[1122/050409.690:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1122/090016.680:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1122/133140.448:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1123/044641.232:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1123/052537.928:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1123/153518.421:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1124/030113.860:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1124/044817.266:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1124/044817.267:ERROR:exception_snapshot_win.cc(99)] thread ID 9452 not found in process
+[1124/051640.140:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1124/051640.141:ERROR:exception_snapshot_win.cc(99)] thread ID 2684 not found in process
