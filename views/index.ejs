@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <% for (chat of chats){%> <%- var c = await chat.getChat() %>  <%= c.id %> <%} %>
-    
-      </div>
-    </h1>
-    <p>Welcome to <%= title %></p>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-      chat-icon="https://storage.googleapis.com/cloudprod-apiai/b685a4d1-2830-4d1a-b92f-a28800bd607c_x.png"
-      intent="WELCOME"
-      chat-title="Auto Py Web"
-      agent-id="d5f30117-284c-424a-aa22-62377060e50c"
-      language-code="pt-br"
-    ></df-messenger>
-  </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  </div>
+  </h1>
+  <p>Welcome to <%= title %></p>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger chat-icon="https://storage.googleapis.com/cloudprod-apiai/b685a4d1-2830-4d1a-b92f-a28800bd607c_x.png"
+    intent="WELCOME" chat-title="Auto Py Web" agent-id="d5f30117-284c-424a-aa22-62377060e50c" language-code="pt-br">
+  </df-messenger>
+</body>
+
 </html>
