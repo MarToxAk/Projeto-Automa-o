@@ -8,7 +8,7 @@ router.get('/', async (req, res, next) => {
   const users = await bd.whatsapp.findAll({
     include: bd.Chat,
     order:[
-      ['createdAt', 'DESC']
+      bd.Chat ,['createdAt', 'DESC']
     ]
     })
   const chats = await bd.Chat.findAll({
