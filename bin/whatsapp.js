@@ -102,7 +102,7 @@ function start(client) {
         const userKey = users.sessionid
 
         const sessionClient = new dialogflow.SessionsClient({
-            keyFilename: "C:/Users/junio/OneDrive/Área de Trabalho/wwp/agente-vendas-lnxa-b897141276bc.json"
+            keyFilename: "./agente-vendas-lnxa-b897141276bc.json"
         });
         const sessionPath = sessionClient.projectAgentSessionPath(projectId, userKey);
         const request = {
