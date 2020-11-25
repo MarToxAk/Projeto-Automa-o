@@ -6,3 +6,4 @@ npm-debug.log
 media/*
 db/*
 tokens
+package-lock.json
