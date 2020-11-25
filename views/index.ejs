@@ -7,11 +7,9 @@
 </head>
 
 <body>
-  <% for( chat of chats ) { %>
-    
-    <% for( mensagem of chat.chat ) { %>
-       
-    <% } %>
+  <% for( var i=0; i < chats.lenght; i++ ) { %>
+    <%- chats.name_wpp %>
+
   <% } %>
   </h1>
   <p>Welcome to <%= title %></p>
