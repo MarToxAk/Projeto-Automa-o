@@ -7,8 +7,9 @@
 </head>
 
 <body>
-  <%= users.id %>
-
+  <% for( chat of chats ) { %>
+      <%- chat.id %> 
+  <% } %>
   </h1>
   <p>Welcome to <%= title %></p>
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
