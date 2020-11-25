@@ -132,7 +132,7 @@ function start(client) {
         })
 
         await client
-            .sendText(message.from, `Bot Moda Familly: ${result.fulfillmentText}`)
+            .sendText(message.from, `${result.fulfillmentText}`)
             .then(() => {
                 console.log('Resposta: ', result.fulfillmentText); //return object success
             })
