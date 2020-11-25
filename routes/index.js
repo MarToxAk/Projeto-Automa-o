@@ -11,12 +11,12 @@ router.get('/', async (req, res, next) => {
   const chats = await bd.whatsapp.findAll({
   include: bd.Chat
   });
-  var teste = function(){
+  const teste = function(){
     for(chat of chats){
       return chat.name_wpp
     }
   }
-  res.render('index', { title: 'Express', users: users, teste: teste });
+  res.render('index', { title: 'Express', users: users, teste: teste() });
 });
 
 module.exports = router;
