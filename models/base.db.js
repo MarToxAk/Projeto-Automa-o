@@ -32,7 +32,7 @@ var Whatsapp = db.sequelize.define('whatsapp', {
     },
 });
 
-Whatsapp.hasOne(Chat, {
+Whatsapp.hasMany(Chat, {
     foreignKey: 'chatId',
     onDelete: 'CASCADE'
   });

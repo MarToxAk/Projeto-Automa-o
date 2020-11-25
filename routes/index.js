@@ -4,13 +4,15 @@ const bd = require('../models/base.db')
 
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  const users = bd.whatsapp.findAll({
+router.get('/', async (req, res, next) => {
+  const users = await bd.whatsapp.findAll({
+    include: bd.Chat
     });
-  const chats = bd.whatsapp.findAll({
-  include: bd.Chat
+  const chats = await bd.Chat.findAll({
+
   });
-  
+
+
   res.render('index', { title: 'Express', users: users, chats: chats });
 });
 

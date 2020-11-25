@@ -7,18 +7,17 @@
 </head>
 
 <body>
-</br>
-  <%= users.length %>
-</br>
-  <%- chats %>
-  <% for( var i=0; i < users.lenght; i++) { %>
-     
-    a      
-    <% } %>
+  
   <% for( chat of users ) { %>
     <%- chat.name_wpp %> 
-    <%- chats[1].chat.id %> 
-    
+  </br>
+    <% for(var i=0; i<chat.chats.length; i++) {%>
+      Mensagem: <%= chat.chats[i].mensagem   %>
+    </br>
+      Resposta: <%= chat.chats[i].resposta   %>
+    </br>
+      <% } %>
+    </br>
   <% } %>
   </h1>
   <p>Welcome to <%= title %></p>

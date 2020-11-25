@@ -28,6 +28,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql2": "^2.2.5",
+    "node-pre-gyp": "^0.16.0",
     "restify": "^8.5.1",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0",
