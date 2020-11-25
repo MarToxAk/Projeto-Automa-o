@@ -12,7 +12,6 @@ router.get('/', async (req, res, next) => {
   });
   const html = await ejs.renderFile();
   res.render('index', { title: 'Express', users: users, chats: chats });
-
 });
 
 module.exports = router;
