@@ -1,4 +1,5 @@
 var express = require('express');
+const { futimes } = require('fs');
 var router = express.Router();
 const bd = require('../models/base.db')
 
@@ -10,7 +11,12 @@ router.get('/', async (req, res, next) => {
   const chats = await bd.whatsapp.findAll({
   include: bd.Chat
   });
-  res.render('index', { title: 'Express', users: users, chats: chats });
+  var teste = function(){
+    for(chat of chats){
+      return chat.name_wpp
+    }
+  }
+  res.render('index', { title: 'Express', users: users, teste: teste });
 });
 
 module.exports = router;
