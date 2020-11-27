@@ -7,6 +7,12 @@ const whatsapp = require("./whatsapp")
 var app = require('../app');
 var debug = require('debug')('projeto-automacao:server');
 var http = require('http');
+var io = require('socket.io')(http);
+
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+});
 
 /**
  * Get port from environment and store in Express.
