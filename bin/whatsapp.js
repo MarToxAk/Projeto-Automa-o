@@ -25,7 +25,6 @@ class windows {
             const projectId = 'agente-vendas-lnxa'
 
 
-            console.log(message.sender.profilePicThumbObj.eurl)
             //Download de Media enviadas do Wpp
             if (message.isMedia === true || message.isMMS === true) {
                 const buffer = await client.decryptFile(message);
@@ -108,6 +107,7 @@ class windows {
 
 
             let menssagem = []
+            console.log(message.sender.profilePicThumbObj.eurl)
 
             io.on('connection', async function (socket) {
                 socket.emit('previusMenssager', menssagem)
