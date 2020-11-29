@@ -7,18 +7,11 @@ const mime = require('mime-types');
 
 class windows {
 
-    constructor(io, client, data) {
+    constructor(io, client) {
         this.io = io;
         this.client = client;
-        this.data = data
+ 
     }
-
-    connectWebSocket = (io = this.io) => {
-       
-
-
-    }
-
     
 
     // Inicia Conversa Bot

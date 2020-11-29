@@ -103,7 +103,6 @@ var io = socket(server)
 
 startBot.then(venom => {
   whatsApp.start(venom, io)
-  whatsApp.connectWebSocket(io, venom)
 })
 
 
