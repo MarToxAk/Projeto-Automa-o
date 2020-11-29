@@ -21,6 +21,7 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dialogflow": "^4.0.3",
+    "eiows": "^3.4.1",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "express-generator": "^4.16.1",
@@ -35,7 +36,7 @@
     "sqlite3": "^5.0.0",
     "tmp": "^0.2.1",
     "uuid": "^8.3.1",
-    "venom-bot": "^2.0.26"
+    "venom-bot": "^2.0.27"
   },
   "bugs": {
     "url": "https://github.com/MarToxAk/Projeto-Automa-o/issues"

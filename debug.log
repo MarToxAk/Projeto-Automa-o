@@ -34,3 +34,143 @@
 [1125/181431.156:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-vGAb2l\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
 [1125/181431.156:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-vGAb2l\Crashpad\reports\13afcca1-821f-41bd-8cc6-2e1c112a2a5d.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
 [1125/181431.156:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1125/182435.620:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1127/074858.243:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1127/080323.405:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1127/080323.406:ERROR:exception_snapshot_win.cc(99)] thread ID 5484 not found in process
+[1127/091047.801:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1127/095211.418:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1127/164010.593:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1127/174224.328:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/030132.508:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/030132.514:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-8j6LC1\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/030132.514:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-8j6LC1\Crashpad\reports\ee2a00b0-5f36-4413-8d75-965ed2fe9499.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/030132.514:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1128/035426.708:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/043114.117:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/044701.116:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/053310.985:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1128/053310.986:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1128/053310.986:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1128/053310.986:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1128/182339.448:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/182339.449:ERROR:exception_snapshot_win.cc(99)] thread ID 9640 not found in process
+[1128/182339.449:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1128/184123.806:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/184123.806:ERROR:exception_snapshot_win.cc(99)] thread ID 10140 not found in process
+[1128/191935.459:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/191935.459:ERROR:exception_snapshot_win.cc(99)] thread ID 6892 not found in process
+[1128/193439.521:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1128/193439.522:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1128/193439.522:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1128/193439.522:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1128/203408.060:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/203408.065:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-oieFbC\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/203408.065:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-oieFbC\Crashpad\reports\bb5c1f4c-822d-4d9a-b682-051bf375bf82.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/203408.065:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1128/203408.066:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1128/231030.294:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82070000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.295:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\MMDevApi.dll
+[1128/231030.295:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82070000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.295:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\MMDevApi.dll
+[1128/231030.295:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc894a0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.295:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\shcore.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc894a0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\shcore.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc879f0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\DEVOBJ.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc879f0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\DEVOBJ.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc87f30000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\cfgmgr32.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc87f30000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\cfgmgr32.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc81e40000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\AUDIOSES.DLL
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc81e40000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\AUDIOSES.DLL
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc87b70000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\powrprof.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc87b70000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\powrprof.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc87b50000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\UMPDC.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc87b50000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\UMPDC.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc85860000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\resourcepolicyclient.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc85860000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.296:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\resourcepolicyclient.dll
+[1128/231030.296:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82aa0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\avrt.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82aa0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\system32\avrt.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc7e020000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\Windows.UI.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc7e020000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\Windows.UI.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82100000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\WindowManagementAPI.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82100000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\WindowManagementAPI.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc7df20000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\TextInputFramework.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc7df20000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\TextInputFramework.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc7ddc0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\InputHost.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc7ddc0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\InputHost.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc83be0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\wintypes.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc83be0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\wintypes.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82e50000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\twinapi.appcore.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc82e50000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\twinapi.appcore.dll
+[1128/231030.297:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc852a0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.297:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\CoreMessaging.dll
+[1128/231030.298:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc852a0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.298:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\CoreMessaging.dll
+[1128/231030.298:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc84bc0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.298:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\CoreUIComponents.dll
+[1128/231030.298:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc84bc0000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.298:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\System32\CoreUIComponents.dll
+[1128/231030.298:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc86a10000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.298:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\ntmarta.dll
+[1128/231030.298:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc86a10000 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.298:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Windows\SYSTEM32\ntmarta.dll
+[1128/231030.298:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc8a73c168 of 8 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[1128/231030.298:ERROR:process_snapshot_win.cc(311)] failed to read target address
+[1128/231030.298:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-O1rYTd\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/231030.298:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-O1rYTd\Crashpad\reports\4a310456-e1f1-4aef-bd9a-85573d785b34.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1128/231030.298:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1128/231030.298:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1128/231043.529:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1128/231043.530:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1128/231043.530:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1128/233821.577:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/233821.578:ERROR:exception_snapshot_win.cc(99)] thread ID 1376 not found in process
+[1128/234524.306:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1128/234524.307:ERROR:exception_snapshot_win.cc(99)] thread ID 1724 not found in process
+[1129/013825.324:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1129/013825.325:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1129/013825.325:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1129/013825.325:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1129/034610.680:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1129/045259.124:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1129/045259.125:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1129/045259.125:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1129/045259.125:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1129/050457.952:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1129/053936.461:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1129/053936.461:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1129/053936.461:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1129/053936.461:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1129/074857.497:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1129/074857.498:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1129/074857.498:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1129/092157.275:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1129/092938.541:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1129/092938.542:ERROR:exception_snapshot_win.cc(99)] thread ID 7976 not found in process

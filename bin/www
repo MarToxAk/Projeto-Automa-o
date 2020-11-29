@@ -3,21 +3,20 @@
 /**
  * Module dependencies.
  */
-const whatsapp = require("./whatsapp")
 var app = require('../app');
 var debug = require('debug')('projeto-automacao:server');
 var http = require('http');
-var io = require('socket.io')(http);
+var startBot = require('./start_bot')
+var chatWpp = require('./whatsapp');
+var socket = require('./socket')
 
 
-io.on('connection', (socket) => {
-  console.log('a user connected');
-});
+
 
 /**
  * Get port from environment and store in Express.
  */
-whatsapp
+
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
@@ -26,6 +25,8 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -94,3 +95,16 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+
+let whatsApp = new chatWpp()
+var io = socket(server)
+
+startBot.then(venom => {
+  whatsApp.start(venom, io)
+  whatsApp.connectWebSocket(io, venom)
+})
+
+
+
