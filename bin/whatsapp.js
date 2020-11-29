@@ -107,11 +107,9 @@ class windows {
 
 
             let menssagem = []
-            console.log(message.sender.profilePicThumbObj.eurl)
-
-            io.on('connection', async function (socket) {
+            io.on('connection', function (socket) {
                 socket.emit('previusMenssager', menssagem)
-                socket.on('sendMenssage', async (data) => {
+                socket.on('sendMenssage', (data) => {
                     menssagem.push(data)
                     socket.broadcast.emit('receivedMensagem', data);
                     client.sendText(message.from, data.resposta)
@@ -129,7 +127,7 @@ class windows {
             }
             io.emit('previusMenssager2', mm)
             io.broadcast.emit('previusMenssager2', mm)
-            menssagem.push(mm)
+            menssagem.push(menssagem)
 
 
 
