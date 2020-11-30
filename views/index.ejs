@@ -258,75 +258,7 @@
               </div>
             </div>
             <div class="inbox_chat">
-              <div class="chat_list active_chat">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p>Test, which is a new approach to have all solutions
-                      astrology under one roof.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat_list">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p>Test, which is a new approach to have all solutions
-                      astrology under one roof.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat_list">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p>Test, which is a new approach to have all solutions
-                      astrology under one roof.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat_list">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p>Test, which is a new approach to have all solutions
-                      astrology under one roof.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat_list">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p>Test, which is a new approach to have all solutions
-                      astrology under one roof.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat_list">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p>Test, which is a new approach to have all solutions
-                      astrology under one roof.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat_list">
-                <div class="chat_people">
-                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <div class="chat_ib">
-                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                    <p class="message"></p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div class="mesgs">
@@ -364,7 +296,7 @@
                 <div class="received_msg">
                   <div class="received_withd_msg">
                     <p>` + message.mensagem + `</p>
-                    <span class="time_date"> 11:01 AM | June 9</span>
+                    <span class="time_date"> `+ message.from +`</span>
                   </div>
                 </div>
               </div>
@@ -380,8 +312,29 @@
               </div>
        `)
     }
+    function listaContato(chat) {
+      $('.inbox_chat').append(`
+      <div class="chat_list active_chat">
+        <div class="chat_people">
+          <div class="chat_img"> <img src="` + chat.contact.profilePicThumbObj.eurl + `" alt="sunil"> </div>
+          <div class="chat_ib">
+            <h5>`+ chat.contact.formattedName +`<span class="chat_date">Dec 25</span></h5>
+            <p>Test, which is a new approach to have all solutions
+            astrology under one roof.</p>
+          </div>
+        </div>
+      </div>
+       `)
+    }
 
-
+    socket.on('listContact', (chats) =>{
+      for (chat of chats) {
+        
+        if(chat.isGroup === false){
+          listaContato(chat)
+        }
+      }
+    })
     socket.on('previusMenssager', function (messages) {
       for (message of messages) {
         if (message.mensagem.length) {
@@ -404,6 +357,10 @@
         renderSendMenssager(message)
       }
 
+      var dataObj = {
+        from: message.from,
+      }
+      socket.emit('sendMenssage', dataObj);
     })
 
 

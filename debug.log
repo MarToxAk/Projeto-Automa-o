@@ -174,3 +174,14 @@
 [1129/092157.275:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [1129/092938.541:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
 [1129/092938.542:ERROR:exception_snapshot_win.cc(99)] thread ID 7976 not found in process
+[1129/184034.363:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1129/184034.364:ERROR:exception_snapshot_win.cc(99)] thread ID 4852 not found in process
+[1129/184705.599:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1129/184705.599:ERROR:exception_snapshot_win.cc(99)] thread ID 4140 not found in process
+[1129/185750.787:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1129/194112.021:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1129/200800.252:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1129/203611.112:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1130/034620.184:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1130/042513.878:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1130/053821.110:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)

@@ -10,15 +10,64 @@ class windows {
     constructor(io, client) {
         this.io = io;
         this.client = client;
- 
     }
-    
+
 
     // Inicia Conversa Bot
-    start(client = this.client, io = this.io) {
-
+    async start(client = this.client, io = this.io) {
+        let menssagem = []
+        let send = [{from: '551236005005@c.us'}]
         
+       
+        //const allMessages = await client.getAllMessagesInChat('551236005005@c.us');
+       
+        io.on('connection', async function (socket) {
+            const chats = await client.getAllChats();
+            io.emit('listContact', chats)
+            socket.emit('previusMenssager', menssagem)
+            socket.on('sendMenssage', (data) => {
+                menssagem.push(data)
+                
+                var name_wpp = function (data) {        
+                    if(data.from !== undefined){
+                        send.push({from: data.from})
+                        return data.from
+                    }else{
+                        return '551236005005@c.us'
+                    }
+                }
+                name_wpp(data)
 
+                socket.broadcast.emit('receivedMensagem', data);
+                client
+                    .sendText(send[send.length - 1].from, data.resposta)
+            })
+
+        });
+
+
+        client.onMessage((message) => {
+
+            const name_wpp = function () {
+                if (message.sender.pushname !== undefined) {
+                    return message.sender.pushname
+                } else {
+                    return message.sender.verifiedName
+                }
+            };
+            var mm = {
+                mensagem: message.body,
+                resposta: '',
+                imagem: message.sender.profilePicThumbObj.eurl,
+                from: message.sender.id,
+                name: name_wpp(),
+
+            }
+            io.emit('previusMenssager2', mm)
+            menssagem.push(mm)
+        })
+
+        /**
         client.onMessage(async (message) => {
             const fileNameNow = uuid.v4();
             const sessionId = uuid.v4();
@@ -133,6 +182,7 @@ class windows {
 
 
         })
+         */
 
     }
 }
