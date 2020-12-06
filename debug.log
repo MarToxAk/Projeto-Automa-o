@@ -737,3 +737,6 @@
 [1206/191237.485:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-YZFJu8\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
 [1206/191237.486:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-YZFJu8\Crashpad\reports\06e3a56a-d1c2-4b2c-b09d-3c81831e6f40.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
 [1206/191237.486:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1206/192343.937:ERROR:file_io_win.cc(162)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-otHpxd\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[1206/192343.938:ERROR:file_io_win.cc(171)] CreateFile C:\Users\junio\AppData\Local\Temp\puppeteer_dev_chrome_profile-otHpxd\Crashpad\reports\a2e71e1a-2e07-49d0-8a5a-3f1941f5938e.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[1206/192343.938:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
