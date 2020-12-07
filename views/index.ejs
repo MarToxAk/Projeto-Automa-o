@@ -361,6 +361,7 @@
       $(document).ready(function () {
         $('.listContact').click(function () {
           const numeroTel = $(this).attr('value')
+          $('.active').removeClass('active')
           function chat(chats) {
             for (chat of chats) {
               if (chat.contact.id === `${numeroTel}@c.us`) {
