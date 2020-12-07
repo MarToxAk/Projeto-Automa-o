@@ -47,16 +47,17 @@ class windows {
             socket.on('room', async function (room) {
                 socket.join(room);
                 const chat22 = await client.getAllMessagesInChat(`${room}@c.us`, true)
+                console.log(chat22)
                 io.to(room).emit('chat', chat22)
-                console.log(chat22.id)
+                //console.log(chat22.id)
             });
             socket.on('leave-room', function (room) {
                 socket.leave(room, function (err) {
-                    console.log(err); // display null
-                    console.log(socket.adapter.rooms);  // display the same list of rooms the specified room is still there
+                    //console.log(err); // display null
+                    //console.log(socket.adapter.rooms);  // display the same list of rooms the specified room is still there
                 });
-                console.log(`${socket.id} saiu da sala ${room}`)
-                console.log(socket.rooms);
+                //console.log(`${socket.id} saiu da sala ${room}`)
+                //console.log(socket.rooms);
             });
             socket.on('sendMenssage', (data) => {
                 menssagem.push(data)
@@ -82,7 +83,7 @@ class windows {
 
         client.onAnyMessage((message)=>{
             const tel = message.to.match(/([0-9]+)/)
-            console.log(message);
+            //console.log(message);
 
             //client.sendLocation('5512982062736@c.us', '-23.7991625', '-45.3587645')
             if(message.to === '551236005005@c.us')
