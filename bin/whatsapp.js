@@ -47,7 +47,7 @@ class windows {
             socket.on('room', async function (room) {
                 socket.join(room);
                 const chat22 = await client.getAllMessagesInChat(`${room}@c.us`, true)
-                console.log(chat22)
+                //console.log(chat22)
                 io.to(room).emit('chat', chat22)
                 //console.log(chat22.id)
             });
