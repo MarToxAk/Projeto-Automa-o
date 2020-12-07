@@ -424,8 +424,7 @@
       }
       $('.contacts').append(`
             <li>
-              <div class='listContact' value=`+ chat.presence.id.user + `>
-                <div class="d-flex input-group-text send_btn">
+                <div class="d-flex input-group-text send_btn listContact" value=`+ chat.presence.id.user + `>
                   <div class="img_cont">
                     <img src=`+ teste(chat) + `
                       class="rounded-circle user_img">
@@ -435,7 +434,6 @@
                     <span>`+ chat.contact.formattedName + `</span>
                     <p>`+ chat.contact.formattedName +` is online</p>
                   </div>
-                </div>
                 </div>
             </li>
    `)
