@@ -360,6 +360,7 @@
     function chatDropdown(chats) {
       $(document).ready(function () {
         $('.listContact').click(function () {
+          $(`.${numeroTel}`).attr('class', `${numeroTel} active`)
           const numeroTel = $(this).attr('value')
           function chat(chats) {
             for (chat of chats) {
@@ -425,7 +426,7 @@
         }
       }
       $('.contacts').append(`
-            <li class="`+ chat.presence.id.user + `"">
+            <li class="`+ chat.presence.id.user + `">
                 <div class="d-flex bd-highlight listContact" value=`+ chat.presence.id.user + `>
                   <div class="img_cont">
                     <img src=`+ teste(chat) + `
