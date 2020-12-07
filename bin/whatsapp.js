@@ -159,6 +159,8 @@ class windows {
                 whatsappId: users.id
             })
 
+            client
+                .sendText(message.from, result.fulfillmentText)
 
             //sconsole.log(message.body)
 
@@ -180,12 +182,12 @@ class windows {
                             'Longitude: ' + motoristaLongitude,
                             'Last Update: ' + motoristaData);
                         await client
-                            .sendLocation('5512982062736@c.us', '-23.7991625', '-45.3587645')
+                            .sendLocation(message.from, motoristaLatitude, motoristaLongitude)
 
 
-                    }, 10000);
+                    }, 300000);
                     //console.log(60*message.shareDuration)
-                    await sleep(1000 * message.shareDuration)
+                    await sleep(1001 * message.shareDuration)
                     //console.log('Parou')
                     clearInterval(time)
                 }
@@ -216,7 +218,7 @@ class windows {
 
             if (message.body === "!Stop" && message.isGroupMsg === false) {
                 //console.log('Aqui para')
-                //clearInterval(time)
+                clearInterval(time)
             }
             //client.sendLocation('5512982062736@c.us', '-23.7991625', '-45.3587645')
             const chats = await client.getAllChats();
