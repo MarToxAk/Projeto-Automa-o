@@ -527,13 +527,10 @@
         }
       }
       $('.msg_card_body').scrollTop($(".msg_card_body")[0].scrollHeight);
-
     })
 
-    $(document).keypress(function (event) {
-      var keycode = (event.keyCode ? event.keyCode : event.which);
-      if (keycode == '13') {
-        event.preventDefault();
+    function sendMessage(){
+      event.preventDefault();
         var mensagem = $('textarea[name=menssagem]').val();
         if (mensagem.length) {
           var mensagemObject = {
@@ -547,8 +544,16 @@
         //$('textarea[name=menssagem]').val('');
         var messageNumber = parseInt($('.msg_head .bd-highlight .user_info p').attr('value'))+1
         $('.msg_head .bd-highlight .user_info p').replaceWith(`<p value="`+messageNumber+`"> `+ messageNumber +` Messages</p>`)
+    }
 
-      
+    $('.input-group-append').click(function () {
+      sendMessage()
+    }
+
+    $(document).keypress(function (event) {
+      var keycode = (event.keyCode ? event.keyCode : event.which);
+      if (keycode == '13') {
+        sendMessage()
       }
     });
   </script>
