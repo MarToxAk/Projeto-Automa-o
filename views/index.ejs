@@ -354,6 +354,13 @@
 
   <script type="text/javascript">
     var socket = io('https://228577ba925e.ngrok.io');
+    function contactName(data){
+        if(data.contact.pushname === undefined){
+          return data.contact.formattedName
+        }else{
+          return data.contact.pushname
+        }
+      }
     function chatDropdown(chats) {
       $(document).ready(function () {
         $('.listContact').click(function () {
@@ -422,13 +429,7 @@
           return chat.contact.profilePicThumbObj.eurl
         }
       }
-      function contactName(data){
-        if(data.contact.pushname === undefined){
-          return data.contact.formattedName
-        }else{
-          return data.contact.pushname
-        }
-      }
+    
       $('.contacts').append(`
             <li class="`+ chat.presence.id.user + `">
                 <div class="d-flex bd-highlight listContact" value=`+ chat.presence.id.user + `>
