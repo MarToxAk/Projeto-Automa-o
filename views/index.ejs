@@ -408,6 +408,7 @@
             $(".chatShow").removeClass("chatShow").addClass("chatClose");
             $('.msg_card_body').replaceWith('<div class="card-body msg_card_body"></div>')
             $('.msg_head').replaceWith('<div class="card-header msg_head"></div>')
+            $(`.${numeroTel}`).attr('class', '')
           })
         });
       });
