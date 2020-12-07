@@ -134,33 +134,7 @@ class windows {
     
             //
             const sessionPath = sessionClient.projectAgentSessionPath(projectId, userKey);
-            const request = {
-                session: sessionPath,
-                queryInput: {
-                    text: {
-                        // The query to send to the dialogflow agent
-                        text: message.body,
-                        // The language used by the client (en-US)
-                        languageCode: 'pt-BR',
-                    },
-                },
-    
-            };
-    
-            //Resposta do Diagflow
-            const responses = await sessionClient.detectIntent(request);
-            const result = responses[0].queryResult;
-    
-            //Criação do LOG de Conversa na database
-            await bd.Chat.create({
-                mensagem: message.body,
-                resposta: result.fulfillmentText,
-                chatId: users.id,
-                whatsappId: users.id
-            })
-
-            client
-                .sendText(message.from, result.fulfillmentText)
+            
 
             //sconsole.log(message.body)
 
@@ -225,6 +199,33 @@ class windows {
             io.emit('listContact', chats)
             client.sendSeen(message.from);
 
+const request = {
+                session: sessionPath,
+                queryInput: {
+                    text: {
+                        // The query to send to the dialogflow agent
+                        text: message.body,
+                        // The language used by the client (en-US)
+                        languageCode: 'pt-BR',
+                    },
+                },
+    
+            };
+    
+            //Resposta do Diagflow
+            const responses = await sessionClient.detectIntent(request);
+            const result = responses[0].queryResult;
+    
+            //Criação do LOG de Conversa na database
+            await bd.Chat.create({
+                mensagem: message.body,
+                resposta: result.fulfillmentText,
+                chatId: users.id,
+                whatsappId: users.id
+            })
+
+            client
+                .sendText(message.from, result.fulfillmentText)
         }
         )
 
