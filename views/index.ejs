@@ -380,7 +380,7 @@
                     <span class="online_icon"></span>
                   </div>
                   <div class="user_info">
-                    <span>`+ chatVal.contact.pushname + `</span>
+                    <span>`+ contactName(chatVal) + `</span>
                     <p></p>
                   </div>
                   <div class="video_cam">
@@ -422,6 +422,13 @@
           return chat.contact.profilePicThumbObj.eurl
         }
       }
+      function contactName(data){
+        if(data.contact.pushname === undefined){
+          return data.contact.formattedName
+        }else{
+          return data.contact.pushname
+        }
+      }
       $('.contacts').append(`
             <li class="`+ chat.presence.id.user + `">
                 <div class="d-flex bd-highlight listContact" value=`+ chat.presence.id.user + `>
@@ -431,8 +438,8 @@
                     <span class="online_icon"></span>
                   </div>
                   <div class="user_info">
-                    <span>`+ chat.contact.pushname + `</span>
-                    <p>`+ chat.contact.pushname +` is online</p>
+                    <span>`+ contactName(chat) + `</span>
+                    <p>`+ contactName(chat) +` is online</p>
                   </div>
                 </div>
             </li>
