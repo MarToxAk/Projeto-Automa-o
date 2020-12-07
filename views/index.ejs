@@ -541,7 +541,7 @@
           socket.emit('sendMenssage', mensagemObject);
         }
         //renderSendMenssager(mensagemObject)
-        //$('textarea[name=menssagem]').val('');
+        $('textarea[name=menssagem]').val('');
         var messageNumber = parseInt($('.msg_head .bd-highlight .user_info p').attr('value'))+1
         $('.msg_head .bd-highlight .user_info p').replaceWith(`<p value="`+messageNumber+`"> `+ messageNumber +` Messages</p>`)
     }
