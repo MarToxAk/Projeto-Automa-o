@@ -475,9 +475,7 @@
     function renderReciveMenssager(message) {
       $('.msg_card_body').append(`
       <div class="d-flex justify-content-end mb-4">
-        <div class="msg_cotainer_send">`+message.body+ `
-        <span class="msg_time_send">`+timeConverter(message.t)+`</span>
-        </div>
+        <div class="msg_cotainer_send">`+message.body+ `<span class="msg_time_send">`+timeConverter(message.t)+`</span></div>
         <div class="img_cont_msg">
           <img src=`+ message.sender.profilePicThumbObj.eurl + `
             class="rounded-circle user_img_msg">
@@ -492,9 +490,7 @@
           <div class="img_cont_msg">
             <img src=`+ message.sender.profilePicThumbObj.eurl + ` class="rounded-circle user_img_msg">
           </div>
-          <div class="msg_cotainer">`+message.body+`
-            <span class="msg_time">`+timeConverter(message.t)+`</span>
-          </div>
+          <div class="msg_cotainer">`+message.body+`<span class="msg_time">`+timeConverter(message.t)+`</span></div>
         </div>
       `)
     }
