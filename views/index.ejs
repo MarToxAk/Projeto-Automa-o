@@ -354,9 +354,6 @@
 
   <script type="text/javascript">
     var socket = io('https://228577ba925e.ngrok.io');
-    socket.emit('room', '5512982062736')
-
-
     function chatDropdown(chats) {
       $(document).ready(function () {
         $('.listContact').click(function () {
@@ -485,7 +482,7 @@
           </div>
           <div class="msg_cotainer">
             `+ message.body + `
-            <span class="msg_time">8:40 AM, Today</span>
+            <span class="msg_time">`+timeConverter(message.t)+`</span>
           </div>
         </div>
       `)
