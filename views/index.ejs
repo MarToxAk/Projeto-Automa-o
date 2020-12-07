@@ -400,6 +400,7 @@
                   </ul>
                 </div>
             `)
+            $('li .user_info p').attr
             socket.emit('room', numeroTel);
           })
           $(".chatShow").hide("slow", () => {
@@ -424,7 +425,7 @@
       }
       $('.contacts').append(`
             <li>
-                <div class="d-flex bd-highlight listContact" value=`+ chat.presence.id.user + `>
+                <div class="d-flex bd-highlight listContact `+ chat.presence.id.user + `" value=`+ chat.presence.id.user + `>
                   <div class="img_cont">
                     <img src=`+ teste(chat) + `
                       class="rounded-circle user_img">
