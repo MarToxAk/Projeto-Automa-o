@@ -360,7 +360,6 @@
     function chatDropdown(chats) {
       $(document).ready(function () {
         $('.listContact').click(function () {
-          $(`.${numeroTel}`).attr('class', `${numeroTel} active`)
           const numeroTel = $(this).attr('value')
           function chat(chats) {
             for (chat of chats) {
