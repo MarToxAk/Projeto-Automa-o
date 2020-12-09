@@ -81,12 +81,12 @@ class windows {
             }
         });
 
-        client.onAnyMessage((message)=>{
+        client.onAnyMessage((message) => {
             const tel = message.to.match(/([0-9]+)/)
             //console.log(message);
 
             //client.sendLocation('5512982062736@c.us', '-23.7991625', '-45.3587645')
-            if(message.to === '551236005005@c.us')
+            if (message.to === '551236005005@c.us')
                 io.in(message.from.match(/([0-9]+)/)[0]).emit('updateWhatsapp', message)
             else
                 io.in(message.to.match(/([0-9]+)/)[0]).emit('updateWhatsapp', message)
@@ -107,8 +107,8 @@ class windows {
                 }
             };
 
-           
-            
+
+
 
             //sconsole.log(message.body)
 
@@ -172,9 +172,38 @@ class windows {
             //client.sendLocation('5512982062736@c.us', '-23.7991625', '-45.3587645')
             const chats = await client.getAllChats();
             io.emit('listContact', chats)
-            client.sendSeen(message.from);
 
-const request = {
+            
+
+            await bd.whatsapp.create({
+                sessionid: sessionId,
+                chatid: message.chatId,
+                name_save: `${message.sender.formattedName}`,
+                name_wpp: name_wpp()
+            })
+                .then((certo) => console.log('Criado com Sucesso!'))
+                .catch((erro) => console.error('Já exite um contato com essa ChatId: ', message.chatId));
+
+            //Busca o chatId para inicia a conversa.
+
+            const users = await bd.whatsapp.findOne({
+                where: {
+                    chatid: message.chatId
+                }
+            });
+
+            //Key para  ser usado na conversa com o Google
+            const userKey = users.sessionid
+
+            //KeyFile da API GOOGLE
+            const sessionClient = new dialogflow.SessionsClient({
+                keyFilename: "./agente-vendas-lnxa-b897141276bc.json"
+            });
+
+            //
+            const sessionPath = sessionClient.projectAgentSessionPath(projectId, userKey);
+
+            const request = {
                 session: sessionPath,
                 queryInput: {
                     text: {
@@ -184,40 +213,14 @@ const request = {
                         languageCode: 'pt-BR',
                     },
                 },
-    
+
             };
-            await bd.whatsapp.create({
-                sessionid: sessionId,
-                chatid: message.chatId,
-                name_save: `${message.sender.formattedName}`,
-                name_wpp: name_wpp()
-            })
-                .then((certo) => console.log('Criado com Sucesso!'))
-                .catch((erro) => console.error('Já exite um contato com essa ChatId: ', message.chatId));
-    
-            //Busca o chatId para inicia a conversa.
-    
-            const users = await bd.whatsapp.findOne({
-                where: {
-                    chatid: message.chatId
-                }
-            });
-    
-            //Key para  ser usado na conversa com o Google
-            const userKey = users.sessionid
-    
-            //KeyFile da API GOOGLE
-            const sessionClient = new dialogflow.SessionsClient({
-                keyFilename: "./agente-vendas-lnxa-b897141276bc.json"
-            });
-    
-            //
-            const sessionPath = sessionClient.projectAgentSessionPath(projectId, userKey);
-    
+
             //Resposta do Diagflow
             const responses = await sessionClient.detectIntent(request);
             const result = responses[0].queryResult;
-    
+            console.log(result.fulfillmentText)
+
             //Criação do LOG de Conversa na database
             await bd.Chat.create({
                 mensagem: message.body,
@@ -228,6 +231,10 @@ const request = {
 
             client
                 .sendText(message.from, result.fulfillmentText)
+                
+            client.sendSeen(message.from);
+
+
         }
         )
 

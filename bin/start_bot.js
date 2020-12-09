@@ -20,10 +20,11 @@ const teste = venom.create(launchConfig)
 const mmaps = new maps.Client({});
 
 mmaps
-  .directions({
+  .reverseGeocode({
     params: {
-      origin: { lat: -23.822591375488635, lng: -45.37750908562859 },
-      destination: { lat: -23.799402783917, lng: -45.35869944626199 },
+      latlng: { lat: -23.822591375488635, lng: -45.37750908562859 },
+      //destination: { lat: -23.799402783917, lng: -45.35869944626199 },
+      //destination: { lat: -23.829467067593107, lng: -45.371130514439294 },
       key: "AIzaSyA7zjgM_3IIlHJkR_cqJCW6wrRJ_D5PADA",
     },
     timeout: 1000, // milliseconds
